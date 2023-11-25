@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+
+int TreiCifImp(int a)
+{
+    int uc,ok=0,nr=0,y;
+    while(a>0)
+    {
+        uc=a%10;
+        if(uc%2==1)
+        {
+            nr++;
+        }
+        else
+        {
+            nr=0;
+        }
+        if(nr==3)
+        {
+            ok=1;
+            break;
+        }
+        a=a/10;
+    }
+    return ok;
+}
+
